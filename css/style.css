@@ -49,3 +49,14 @@ body{
 box-icon{
     fill: #fff;
 }
+
+@media screen and (min-width:395px) and (max-width:800px) {
+    body{
+        height: 100vh;
+        overflow-y: hidden;
+    }
+    .col-express{
+        display: none ;
+    }
+    
+  }
