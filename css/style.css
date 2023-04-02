@@ -50,13 +50,28 @@ box-icon{
     fill: #fff;
 }
 
-@media screen and (min-width:226px) and (max-width:800px) {
-    body{
-        height: 100vh;
-        overflow-y: hidden;
-    }
-    .col-express{
-        display: none ;
-    }
-    
-  }
+.form{
+    top: 8vh;
+    left: 43.5%;
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+
+}
+
+.popup{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 60px;
+    background: #000000;
+    color: #fff;
+    padding-top: 20px;
+    border-radius: 20px;
+}
+
+.hide{
+    display: none;
+}
