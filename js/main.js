@@ -3,6 +3,8 @@
 const cols = document.querySelectorAll(".col");
 let lock = "lock-open"; // объявляем переменную lock вне обработчика click
 
+
+
 document.addEventListener("keydown", (event) => {
   event.preventDefault();
   if (event.code.toLocaleLowerCase() === "space") {
@@ -11,13 +13,7 @@ document.addEventListener("keydown", (event) => {
   console.log(event.code);
 });
 
-document.addEventListener("click", (event) => {
-  event.preventDefault();
 
-    setRandomColors();
-  
-  console.log(event.code);
-});
 
 document.addEventListener("click", (event) => {
   const type = event.target.dataset.type;
@@ -108,6 +104,19 @@ function getColorsFromHash() {
   }
   return [];
 }
+
+document.addEventListener("click", (event) => {
+  setTimeout(function popup (){
+    const h2 = event.target.dataset.type;
+    console.log(h2);
+    if (h2 === "copy") {
+      alert('HEX скопирован')
+    }
+  }, 1)
+});
+
+
+
 
 setRandomColors(true);
 
